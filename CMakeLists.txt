@@ -23,15 +23,15 @@ target_include_directories(adxl343 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src/c)
 
 target_link_libraries(adxl343 ${PICO_DEPENDENCIES})
 
-install(TARGETS adxl343
-    EXPORT pico-adxl343-targets
-    LIBRARY DESTINATION lib
-    ARCHIVE DESTINATION lib
-    RUNTIME DESTINATION bin
-    INCLUDES DESTINATION include
-)
-install(DIRECTORY include/ DESTINATION include)
-install(EXPORT pico-adxl343-targets
-    NAMESPACE pico-adxl343::
-    DESTINATION lib/cmake/pico-adxl343
-)
+#install(TARGETS adxl343
+#    EXPORT pico-adxl343-targets
+#    LIBRARY DESTINATION lib
+#    ARCHIVE DESTINATION lib
+#    RUNTIME DESTINATION bin
+#    INCLUDES DESTINATION include
+#)
+#install(DIRECTORY include/ DESTINATION include)
+#install(EXPORT pico-adxl343-targets
+#    NAMESPACE pico-adxl343::
+#    DESTINATION lib/cmake/pico-adxl343
+#)
