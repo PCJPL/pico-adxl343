@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.13)
 
+if(NOT DEFINED ENV{PICO_SDK_PATH})
+    message(FATAL_ERROR "The PICO_SDK_PATH environment variable is not set. Please set it before building the examples.")
+endif()
+
 # Include the Pico SDK import file.
 include(pico_sdk_import.cmake)
 
@@ -11,13 +15,23 @@ project(pico-adxl34x-example VERSION 1.0)
 # Initialize the Pico SDK.
 pico_sdk_init()
 
+# Enable debug logging in the ADXL343 library for debug builds
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    add_definitions(-DADXL34X_DEBUG)
+endif()
+
 # Add your main.c file.
 add_executable(pico-adxl34x-example
     main.c
 )
 
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+    target_compile_options(pico-adxl34x-example PRIVATE -Wall -Wextra)
+endif()
+
 # Link the Pico SDK libraries to your project.
 target_link_libraries(pico-adxl34x-example 
+    PRIVATE
     pico_stdlib
     hardware_i2c
 )
