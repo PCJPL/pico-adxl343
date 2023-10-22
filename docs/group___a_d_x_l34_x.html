@@ -1,0 +1,577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>pico-adxl34x: ADXL34X</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">pico-adxl34x
+   </div>
+   <div id="projectbrief">C library for using the ADXL34x series of accelerometer with the Raspberry Pi Pico SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group___a_d_x_l34_x.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">ADXL34X</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structadxl34x__sensor__t.html">adxl34x_sensor_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structadxl34x__accel__data__t.html">adxl34x_accel_data_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structadxl34x__result__t.html">adxl34x_result_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gaad1d44ad2fdccaf261269ca4a3d43a8f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_x_l34_x.html#gaad1d44ad2fdccaf261269ca4a3d43a8f">adxl34x_registers_t</a> { <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa22ac84f55f22f34ba38fbfab39e95d0a">ADXL34X_DEVID_REGISTER</a> = 0x00
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa307d9a0049cd2c4fc62e766ca6f7d8cd">ADXL34X_THRESH_TAP_REGISTER</a> = 0x1D
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa62759efda00014bb3d6506b011c6d1e1">ADXL34X_OFSX_REGISTER</a> = 0x1E
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa7f2258bf6de36dbb68f9328fdfd5fd26">ADXL34X_OFSY_REGISTER</a> = 0x1F
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fac56228a415b0b251d0a93470224b5895">ADXL34X_OFSZ_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8faff85144c5fcb04204a72d2422f64f3d0">ADXL34X_DUR_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8facf07a0122e7f7fe59f968379d3b555d2">ADXL34X_LATENT_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa22c488b8a05fd87efb1d72b1643d4fbc">ADXL34X_WINDOW_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fad0d63808987d9238a8c45a335a918a0d">ADXL34X_THRESH_ACT_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa807cb89f9e3780e4c4c276d30acae248">ADXL34X_TIME_INACT_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa190f836bf6a661e810b872db7447e785">ADXL34X_THRESH_INACT_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa9ed67782d97be6be700c6cb7804c1fbd">ADXL34X_ACT_INACT_CTL_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa220c29bfffbf4e86a2657f519c0f48ea">ADXL34X_THRESH_FF_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fad14d9c09503dfcfc450164269327b9c9">ADXL34X_TIME_FF_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fac9b5b46fb5201d97b5fea24c628dafb9">ADXL34X_TAP_AXES_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fab1f752081c173fdc92599f2a37c55686">ADXL34X_ACT_TAP_STATUS_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa0b594d967062b3f9e77a98a9730880ad">ADXL34X_BW_RATE_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fabda5b1a75bab0acd27862fbfe5f770f4">ADXL34X_POWER_CTL_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8faec9938936aa2732b36a3cb4d2c1c7028">ADXL34X_INT_ENABLE_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8faf9dab99d64822c6ac8b455638791b17f">ADXL34X_INT_MAP_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fadca89463a0630ba2ecf989c12d0e5185">ADXL34X_INT_SOURCE_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa4b1495a467a9f2f8ca33648163a760de">ADXL34X_DATA_FORMAT_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa4be8f1d7675c620633b898437a42847f">ADXL34X_DATAX0_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa6a4d59f5a43e0f8236adea1d3e898658">ADXL34X_DATAX1_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa4ceec6305dcd4ba70b3259ea91b9d7ea">ADXL34X_DATAY0_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa73461c4d71e093fc9cf964d4cc7f939e">ADXL34X_DATAY1_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa81c6c5ad0f26fd4ac1ccd06ca72e2083">ADXL34X_DATAZ0_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa34aa8691abfc60c9d840dcef4c2c13e0">ADXL34X_DATAZ1_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fafebc1c6173ffa733aeb28432a2c859ac">ADXL34X_FIFO_CTL_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fa4738ba436149df04978e8b8409c798fc">ADXL34X_FIFO_STATUS_REGISTER</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fafd58dd24ca1bb11ebb82e122ecaa4ba4">ADXL34X_TAP_SIGN</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8fae22a90f0010fe3976fe321ed41e6e18e">ADXL34X_ORIENT_CONF</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#ggaad1d44ad2fdccaf261269ca4a3d43a8facd73a64dc268a6fd2a21d2dc4f3ff029">ADXL34X_ORIENT</a>
+<br />
+ }</td></tr>
+<tr class="separator:gaad1d44ad2fdccaf261269ca4a3d43a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89513b81fa109fcfd7543973e1cff533"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_x_l34_x.html#ga89513b81fa109fcfd7543973e1cff533">adxl34x_power_ctl_reg_t</a> </td></tr>
+<tr class="separator:ga89513b81fa109fcfd7543973e1cff533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35abf9de1f8155a838f564d507ad3493"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_x_l34_x.html#ga35abf9de1f8155a838f564d507ad3493">adxl34x_data_format_reg_t</a> { <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga35abf9de1f8155a838f564d507ad3493ac44c2be94279320e59b9e8c85e3c6fea">ADXL34X_DATA_FORMAT_SELF_TEST_BIT</a> = 1 &lt;&lt; 7
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga35abf9de1f8155a838f564d507ad3493abb82102c835573c6f9800982845fddbb">ADXL34X_DATA_FORMAT_SPI_BIT</a> = 1 &lt;&lt; 6
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga35abf9de1f8155a838f564d507ad3493a05b9001f6ba1cd59c19a54d7370095de">ADXL34X_DATA_FORMAT_INT_INVERT_BIT</a> = 1 &lt;&lt; 5
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga35abf9de1f8155a838f564d507ad3493a50a5b60d7d075243f83b068321feb13b">ADXL34X_DATA_FORMAT_FULL_RES_BIT</a> = 1 &lt;&lt; 3
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga35abf9de1f8155a838f564d507ad3493a2da82695489ac455e7ed6d74aef8eed1">ADXL34X_DATA_FORMAT_JUSTIFY_BIT</a> = 1 &lt;&lt; 2
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga35abf9de1f8155a838f564d507ad3493a9a27498bf5df00d27f360e7ab4558458">ADXL34X_DATA_FORMAT_RANGE_BITMASK</a> = 0x03
+<br />
+ }</td></tr>
+<tr class="separator:ga35abf9de1f8155a838f564d507ad3493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dcc20900622eb435780c0f81d13b20c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_x_l34_x.html#ga6dcc20900622eb435780c0f81d13b20c">adxl34x_data_rate_t</a> { <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20cab26b7fab6dc4e759093705e0eedff1fe">ADXL34X_DATA_RATE_0_10_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20caebeef9e1f29ee8b62d101ed55de3b88e">ADXL34X_DATA_RATE_0_20_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20ca1b43eb02f323f0216fdc80c0bdd72efc">ADXL34X_DATA_RATE_0_39_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20ca9f91ea95a6023795bd1b3f2e79585fec">ADXL34X_DATA_RATE_0_78_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20ca824fb6db8f8e522cbb39511164a7a8cd">ADXL34X_DATA_RATE_1_56_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20ca9e199aa0a5f5aada0f217ba37d121233">ADXL34X_DATA_RATE_3_13_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20ca6728a1fdcc8cf24d4544154558a1ad44">ADXL34X_DATA_RATE_6_25_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20ca8138d68edca667ccf5ef4e5e3ac32266">ADXL34X_DATA_RATE_12_5_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20ca893be7c15ebd1ef9ca5b1be91ec2ce9e">ADXL34X_DATA_RATE_25_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20cae5822ae2ed70cd1b29d4bb69a4415775">ADXL34X_DATA_RATE_50_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20ca895e076996b8aa24b13dd02dfee0ca5f">ADXL34X_DATA_RATE_100_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20cab194bc3f656fe0eab1a5a93ff4baf152">ADXL34X_DATA_RATE_200_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20ca2874f391ee604c2c2d4dd026738fee9e">ADXL34X_DATA_RATE_400_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20cacde6e0233e88b9fc9def669d279d69f2">ADXL34X_DATA_RATE_800_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20caba7a8ba7d5f88e3012eb01d59bdbdc43">ADXL34X_DATA_RATE_1600_HZ</a>
+, <br />
+&#160;&#160;<a class="el" href="group___a_d_x_l34_x.html#gga6dcc20900622eb435780c0f81d13b20caa0ae686d4e7b615de7173736f22a1092">ADXL34X_DATA_RATE_3200_HZ</a>
+<br />
+ }</td></tr>
+<tr class="separator:ga6dcc20900622eb435780c0f81d13b20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga34e6394fd13c61d988146546739dbfdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structadxl34x__result__t.html">adxl34x_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_x_l34_x.html#ga34e6394fd13c61d988146546739dbfdd">adxl34x_get_device_id</a> (<a class="el" href="structadxl34x__sensor__t.html">adxl34x_sensor_t</a> *sensor)</td></tr>
+<tr class="separator:ga34e6394fd13c61d988146546739dbfdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d052dd041e5dea8bcd503dd9b08a127"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structadxl34x__accel__data__t.html">adxl34x_accel_data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_x_l34_x.html#ga8d052dd041e5dea8bcd503dd9b08a127">adxl34x_get_raw_acceleration</a> (<a class="el" href="structadxl34x__sensor__t.html">adxl34x_sensor_t</a> *sensor)</td></tr>
+<tr class="separator:ga8d052dd041e5dea8bcd503dd9b08a127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad42a4c8f30113107902e8e4ae5a271f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_x_l34_x.html#gad42a4c8f30113107902e8e4ae5a271f1">adxl34x_convert_to_g</a> (<a class="el" href="structadxl34x__accel__data__t.html">adxl34x_accel_data_t</a> *data, adxl34x_sensitivity_range_t sensitivity)</td></tr>
+<tr class="separator:gad42a4c8f30113107902e8e4ae5a271f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga5e3c6a01e3ddb6a57cb5f09cd6a938b6"><td class="memItemLeft" align="right" valign="top"><a id="ga5e3c6a01e3ddb6a57cb5f09cd6a938b6"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_x_l34_x.html#ga5e3c6a01e3ddb6a57cb5f09cd6a938b6">ADXL34X_ADC_RESOLUTION</a></td></tr>
+<tr class="separator:ga5e3c6a01e3ddb6a57cb5f09cd6a938b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga35abf9de1f8155a838f564d507ad3493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga35abf9de1f8155a838f564d507ad3493">&#9670;&nbsp;</a></span>adxl34x_data_format_reg_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___a_d_x_l34_x.html#ga35abf9de1f8155a838f564d507ad3493">adxl34x_data_format_reg_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Representation of the bits for the <code>DATA_FORMAT</code> register. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga35abf9de1f8155a838f564d507ad3493ac44c2be94279320e59b9e8c85e3c6fea"></a>ADXL34X_DATA_FORMAT_SELF_TEST_BIT&#160;</td><td class="fielddoc"><p>The <code>SELF_TEST</code> bit at position D7 </p><dl class="section warning"><dt>Warning</dt><dd>There are currently no library functions to support the functionality this register bit provides. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga35abf9de1f8155a838f564d507ad3493abb82102c835573c6f9800982845fddbb"></a>ADXL34X_DATA_FORMAT_SPI_BIT&#160;</td><td class="fielddoc"><p>The <code>SPI</code> bit at position D6 </p><dl class="section warning"><dt>Warning</dt><dd>There are currently no library functions to support the functionality this register bit provides. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga35abf9de1f8155a838f564d507ad3493a05b9001f6ba1cd59c19a54d7370095de"></a>ADXL34X_DATA_FORMAT_INT_INVERT_BIT&#160;</td><td class="fielddoc"><p>The <code>INT_INVERT</code> bit at position D5 </p><dl class="section warning"><dt>Warning</dt><dd>There are currently no library functions to support the functionality this register bit provides. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga35abf9de1f8155a838f564d507ad3493a50a5b60d7d075243f83b068321feb13b"></a>ADXL34X_DATA_FORMAT_FULL_RES_BIT&#160;</td><td class="fielddoc"><p>The <code>FULL_RES</code> bit at position D3 </p><dl class="section warning"><dt>Warning</dt><dd>There are currently no library functions to support the functionality this register bit provides. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga35abf9de1f8155a838f564d507ad3493a2da82695489ac455e7ed6d74aef8eed1"></a>ADXL34X_DATA_FORMAT_JUSTIFY_BIT&#160;</td><td class="fielddoc"><p>The <code>JUSTIFY</code> bit at position D2 </p><dl class="section warning"><dt>Warning</dt><dd>There are currently no library functions to support the functionality this register bit provides. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga35abf9de1f8155a838f564d507ad3493a9a27498bf5df00d27f360e7ab4558458"></a>ADXL34X_DATA_FORMAT_RANGE_BITMASK&#160;</td><td class="fielddoc"><p>Bitmask for the <code>RANGE</code> bits at position D1 and D0 </p><dl class="section warning"><dt>Warning</dt><dd>There are currently no library functions to support the functionality this register bit provides. </dd></dl>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga6dcc20900622eb435780c0f81d13b20c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6dcc20900622eb435780c0f81d13b20c">&#9670;&nbsp;</a></span>adxl34x_data_rate_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___a_d_x_l34_x.html#ga6dcc20900622eb435780c0f81d13b20c">adxl34x_data_rate_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Possible data rates for an ADXL34x. </p>
+<p>The data rate controls how many samples (or measurements) the sensor will take of accelerometer data every second. The data rate is expressed in Hertz (Hz). A data rate of 100Hz means the sensor takes a measurement 100 times a second.</p>
+<p>For a table of data rates, their bandwidth, and their binary representation, see Table 7 and 8 in the <a href="https://web.archive.org/web/20230305234556/https://www.analog.com/media/en/technical-documentation/data-sheets/adxl343.pdf">datasheet</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20cab26b7fab6dc4e759093705e0eedff1fe"></a>ADXL34X_DATA_RATE_0_10_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 0.10Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20caebeef9e1f29ee8b62d101ed55de3b88e"></a>ADXL34X_DATA_RATE_0_20_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 0.20Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20ca1b43eb02f323f0216fdc80c0bdd72efc"></a>ADXL34X_DATA_RATE_0_39_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 0.39Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20ca9f91ea95a6023795bd1b3f2e79585fec"></a>ADXL34X_DATA_RATE_0_78_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 0.78Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20ca824fb6db8f8e522cbb39511164a7a8cd"></a>ADXL34X_DATA_RATE_1_56_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 1.56Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20ca9e199aa0a5f5aada0f217ba37d121233"></a>ADXL34X_DATA_RATE_3_13_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 3.13Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20ca6728a1fdcc8cf24d4544154558a1ad44"></a>ADXL34X_DATA_RATE_6_25_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 6.25Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20ca8138d68edca667ccf5ef4e5e3ac32266"></a>ADXL34X_DATA_RATE_12_5_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 12.5Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20ca893be7c15ebd1ef9ca5b1be91ec2ce9e"></a>ADXL34X_DATA_RATE_25_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 25Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20cae5822ae2ed70cd1b29d4bb69a4415775"></a>ADXL34X_DATA_RATE_50_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 50Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20ca895e076996b8aa24b13dd02dfee0ca5f"></a>ADXL34X_DATA_RATE_100_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 100Hz. This is the default data rate used by the sensor. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20cab194bc3f656fe0eab1a5a93ff4baf152"></a>ADXL34X_DATA_RATE_200_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 200Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20ca2874f391ee604c2c2d4dd026738fee9e"></a>ADXL34X_DATA_RATE_400_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 400Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20cacde6e0233e88b9fc9def669d279d69f2"></a>ADXL34X_DATA_RATE_800_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 800Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20caba7a8ba7d5f88e3012eb01d59bdbdc43"></a>ADXL34X_DATA_RATE_1600_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 1600Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6dcc20900622eb435780c0f81d13b20caa0ae686d4e7b615de7173736f22a1092"></a>ADXL34X_DATA_RATE_3200_HZ&#160;</td><td class="fielddoc"><p>Sets the data rate to 3200Hz. </p><dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga89513b81fa109fcfd7543973e1cff533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89513b81fa109fcfd7543973e1cff533">&#9670;&nbsp;</a></span>adxl34x_power_ctl_reg_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___a_d_x_l34_x.html#ga89513b81fa109fcfd7543973e1cff533">adxl34x_power_ctl_reg_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Representation of the bits for the <code>POWER_CTL</code> register. </p>
+
+</div>
+</div>
+<a id="gaad1d44ad2fdccaf261269ca4a3d43a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad1d44ad2fdccaf261269ca4a3d43a8f">&#9670;&nbsp;</a></span>adxl34x_registers_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___a_d_x_l34_x.html#gaad1d44ad2fdccaf261269ca4a3d43a8f">adxl34x_registers_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The register map for an ADXL34x series sensor. </p>
+<p>A thorough read-through of the manufacturer's <a href="https://web.archive.org/web/20230305234556/https://www.analog.com/media/en/technical-documentation/data-sheets/adxl343.pdf">datasheet</a> is crucial in order to understand the specifics of their usage and behaviour.</p>
+<dl class="section note"><dt>Note</dt><dd>For general use cases, you won't need to worry about these as the library provides higher-level functions to handle dealing with registers. However, if you are using more advanced functionality of the sensor that isn't yet implemented in the library, you can interact with the registers yourself with the help of this data type. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa22ac84f55f22f34ba38fbfab39e95d0a"></a>ADXL34X_DEVID_REGISTER&#160;</td><td class="fielddoc"><p>The <code>DEVID</code> register at <code>0x00</code> </p><dl class="section note"><dt>Note</dt><dd>Instead of reading this data directly, you can use <a class="el" href="group___a_d_x_l34_x.html#ga34e6394fd13c61d988146546739dbfdd">adxl34x_get_device_id</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa307d9a0049cd2c4fc62e766ca6f7d8cd"></a>ADXL34X_THRESH_TAP_REGISTER&#160;</td><td class="fielddoc"><p>The <code>THRESH_TAP</code> register at <code>0x1D</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa62759efda00014bb3d6506b011c6d1e1"></a>ADXL34X_OFSX_REGISTER&#160;</td><td class="fielddoc"><p>The <code>OFSX</code> register at <code>0x1E</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa7f2258bf6de36dbb68f9328fdfd5fd26"></a>ADXL34X_OFSY_REGISTER&#160;</td><td class="fielddoc"><p>The <code>OFSY</code> register at <code>0x1F</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fac56228a415b0b251d0a93470224b5895"></a>ADXL34X_OFSZ_REGISTER&#160;</td><td class="fielddoc"><p>The <code>OFSZ</code> register at <code>0x20</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8faff85144c5fcb04204a72d2422f64f3d0"></a>ADXL34X_DUR_REGISTER&#160;</td><td class="fielddoc"><p>The <code>DUR</code> register at <code>0x21</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8facf07a0122e7f7fe59f968379d3b555d2"></a>ADXL34X_LATENT_REGISTER&#160;</td><td class="fielddoc"><p>The <code>LATENT</code> register at <code>0x22</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa22c488b8a05fd87efb1d72b1643d4fbc"></a>ADXL34X_WINDOW_REGISTER&#160;</td><td class="fielddoc"><p>The <code>WINDOW</code> register at <code>0x23</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fad0d63808987d9238a8c45a335a918a0d"></a>ADXL34X_THRESH_ACT_REGISTER&#160;</td><td class="fielddoc"><p>The <code>THRESH_ACT</code> register at <code>0x24</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa807cb89f9e3780e4c4c276d30acae248"></a>ADXL34X_TIME_INACT_REGISTER&#160;</td><td class="fielddoc"><p>The <code>TIME_INACT</code> register at <code>0x25</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa190f836bf6a661e810b872db7447e785"></a>ADXL34X_THRESH_INACT_REGISTER&#160;</td><td class="fielddoc"><p>The <code>THRESH_INACT</code> register at <code>0x26</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa9ed67782d97be6be700c6cb7804c1fbd"></a>ADXL34X_ACT_INACT_CTL_REGISTER&#160;</td><td class="fielddoc"><p>The <code>ACT_INACT_CTL</code> register at <code>0x27</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa220c29bfffbf4e86a2657f519c0f48ea"></a>ADXL34X_THRESH_FF_REGISTER&#160;</td><td class="fielddoc"><p>The <code>THRESH_FF</code> register at <code>0x28</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fad14d9c09503dfcfc450164269327b9c9"></a>ADXL34X_TIME_FF_REGISTER&#160;</td><td class="fielddoc"><p>The <code>TIME_FF</code> register at <code>0x29</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fac9b5b46fb5201d97b5fea24c628dafb9"></a>ADXL34X_TAP_AXES_REGISTER&#160;</td><td class="fielddoc"><p>The <code>TAP_AXES</code> register at <code>0x2A</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fab1f752081c173fdc92599f2a37c55686"></a>ADXL34X_ACT_TAP_STATUS_REGISTER&#160;</td><td class="fielddoc"><p>The <code>TAP_STATUS</code> register at <code>0x2B</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa0b594d967062b3f9e77a98a9730880ad"></a>ADXL34X_BW_RATE_REGISTER&#160;</td><td class="fielddoc"><p>The <code>BW_RATE</code> register at <code>0x2C</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fabda5b1a75bab0acd27862fbfe5f770f4"></a>ADXL34X_POWER_CTL_REGISTER&#160;</td><td class="fielddoc"><p>The <code>POWER_CTL</code> register at <code>0x2D</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8faec9938936aa2732b36a3cb4d2c1c7028"></a>ADXL34X_INT_ENABLE_REGISTER&#160;</td><td class="fielddoc"><p>The <code>INT_ENABLE</code> register at <code>0x2E</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8faf9dab99d64822c6ac8b455638791b17f"></a>ADXL34X_INT_MAP_REGISTER&#160;</td><td class="fielddoc"><p>The <code>INT_MAP</code> register at <code>0x2F</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fadca89463a0630ba2ecf989c12d0e5185"></a>ADXL34X_INT_SOURCE_REGISTER&#160;</td><td class="fielddoc"><p>The <code>INT_SOURCE</code> register at <code>0x30</code> </p><dl class="section warning"><dt>Warning</dt><dd>There are currently no library functions to support the functionality this register provides. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa4b1495a467a9f2f8ca33648163a760de"></a>ADXL34X_DATA_FORMAT_REGISTER&#160;</td><td class="fielddoc"><p>The <code>DATA_FORMAT</code> register at <code>0x31</code> </p><dl class="section warning"><dt>Warning</dt><dd>There are currently no library functions to support the functionality this register provides. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa4be8f1d7675c620633b898437a42847f"></a>ADXL34X_DATAX0_REGISTER&#160;</td><td class="fielddoc"><p>The <code>DATAX0</code> register at <code>0x32</code> </p><dl class="section note"><dt>Note</dt><dd>Instead of reading this data directly, you can use <a class="el" href="group___a_d_x_l34_x.html#ga8d052dd041e5dea8bcd503dd9b08a127">adxl34x_get_raw_acceleration</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa6a4d59f5a43e0f8236adea1d3e898658"></a>ADXL34X_DATAX1_REGISTER&#160;</td><td class="fielddoc"><p>The <code>DATAX1</code> register at <code>0x33</code> </p><dl class="section note"><dt>Note</dt><dd>Instead of reading this data directly, you can use <a class="el" href="group___a_d_x_l34_x.html#ga8d052dd041e5dea8bcd503dd9b08a127">adxl34x_get_raw_acceleration</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa4ceec6305dcd4ba70b3259ea91b9d7ea"></a>ADXL34X_DATAY0_REGISTER&#160;</td><td class="fielddoc"><p>The <code>DATAY0</code> register at <code>0x34</code> </p><dl class="section note"><dt>Note</dt><dd>Instead of reading this data directly, you can use <a class="el" href="group___a_d_x_l34_x.html#ga8d052dd041e5dea8bcd503dd9b08a127">adxl34x_get_raw_acceleration</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa73461c4d71e093fc9cf964d4cc7f939e"></a>ADXL34X_DATAY1_REGISTER&#160;</td><td class="fielddoc"><p>The <code>DATAY1</code> register at <code>0x35</code> </p><dl class="section note"><dt>Note</dt><dd>Instead of reading this data directly, you can use <a class="el" href="group___a_d_x_l34_x.html#ga8d052dd041e5dea8bcd503dd9b08a127">adxl34x_get_raw_acceleration</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa81c6c5ad0f26fd4ac1ccd06ca72e2083"></a>ADXL34X_DATAZ0_REGISTER&#160;</td><td class="fielddoc"><p>The <code>DATAZ0</code> register at <code>0x36</code> </p><dl class="section note"><dt>Note</dt><dd>Instead of reading this data directly, you can use <a class="el" href="group___a_d_x_l34_x.html#ga8d052dd041e5dea8bcd503dd9b08a127">adxl34x_get_raw_acceleration</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa34aa8691abfc60c9d840dcef4c2c13e0"></a>ADXL34X_DATAZ1_REGISTER&#160;</td><td class="fielddoc"><p>The <code>DATAZ1</code> register at <code>0x37</code> </p><dl class="section note"><dt>Note</dt><dd>Instead of reading this data directly, you can use <a class="el" href="group___a_d_x_l34_x.html#ga8d052dd041e5dea8bcd503dd9b08a127">adxl34x_get_raw_acceleration</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fafebc1c6173ffa733aeb28432a2c859ac"></a>ADXL34X_FIFO_CTL_REGISTER&#160;</td><td class="fielddoc"><p>The <code>FIFO_CTL</code> register at <code>0x38</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fa4738ba436149df04978e8b8409c798fc"></a>ADXL34X_FIFO_STATUS_REGISTER&#160;</td><td class="fielddoc"><p>The <code>FIFO_STATUS</code> register at <code>0x39</code> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fafd58dd24ca1bb11ebb82e122ecaa4ba4"></a>ADXL34X_TAP_SIGN&#160;</td><td class="fielddoc"><p>The <code>FIFO_STATUS</code> register at <code>0x3A</code> </p><dl class="section note"><dt>Note</dt><dd>This is an additional register only present on the ADXL344. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8fae22a90f0010fe3976fe321ed41e6e18e"></a>ADXL34X_ORIENT_CONF&#160;</td><td class="fielddoc"><p>The <code>FIFO_STATUS</code> register at <code>0x3B</code> </p><dl class="section note"><dt>Note</dt><dd>This is an additional register only present on the ADXL344. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaad1d44ad2fdccaf261269ca4a3d43a8facd73a64dc268a6fd2a21d2dc4f3ff029"></a>ADXL34X_ORIENT&#160;</td><td class="fielddoc"><p>The <code>FIFO_STATUS</code> register at <code>0x3C</code> </p><dl class="section note"><dt>Note</dt><dd>This is an additional register only present on the ADXL344. </dd></dl>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gad42a4c8f30113107902e8e4ae5a271f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad42a4c8f30113107902e8e4ae5a271f1">&#9670;&nbsp;</a></span>adxl34x_convert_to_g()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adxl34x_convert_to_g </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structadxl34x__accel__data__t.html">adxl34x_accel_data_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">adxl34x_sensitivity_range_t&#160;</td>
+          <td class="paramname"><em>sensitivity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function converts raw accelerometer data to gravitational units \((g)\). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Pointer to the accelerometer data structure. </td></tr>
+    <tr><td class="paramname">sensitivity</td><td>The sensitivity setting of the accelerometer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Here's the math behind it: The conversion is based on the configured sensitivity setting of the accelerometer. The scale factor for ±2g is derived as follows. For a 10-bit ADC, the maximum raw value is: <p class="formulaDsp">
+\[ \text{maximum raw value} = 2^{10} - 1 = 1023 \]
+</p>
+ Thus, the scale factor for ±2g is: <p class="formulaDsp">
+\[ \text{scale factor for ±2g} = \frac{\text{total range in g&#39;s}}{\text{maximum raw value}} = \frac{4.0}{1023} \]
+</p>
+ </dd></dl>
+
+</div>
+</div>
+<a id="ga34e6394fd13c61d988146546739dbfdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34e6394fd13c61d988146546739dbfdd">&#9670;&nbsp;</a></span>adxl34x_get_device_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structadxl34x__result__t.html">adxl34x_result_t</a> adxl34x_get_device_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structadxl34x__sensor__t.html">adxl34x_sensor_t</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the device ID from the ADXL34x sensor.</p>
+<p>This function reads and returns the device ID from the specified ADXL34x sensor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>Pointer to the ADXL34x sensor struct.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structadxl34x__result__t.html">adxl34x_result_t</a> The device ID of the ADXL34x sensor and a status code.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The <code>DEVID</code> register (which stores the device ID) is read-only, and contains a fixed value of <code>0xE5</code>. </dd></dl>
+
+</div>
+</div>
+<a id="ga8d052dd041e5dea8bcd503dd9b08a127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d052dd041e5dea8bcd503dd9b08a127">&#9670;&nbsp;</a></span>adxl34x_get_raw_acceleration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structadxl34x__accel__data__t.html">adxl34x_accel_data_t</a> adxl34x_get_raw_acceleration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structadxl34x__sensor__t.html">adxl34x_sensor_t</a> *&#160;</td>
+          <td class="paramname"><em>sensor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the raw, unconverted acceleration data from all 3 axes from an ADXL34x sensor.</p>
+<p>This function uses a multi-byte read to sequentially read the registers containing the acceleration data. </p><dl class="section note"><dt>Note</dt><dd>The data returned by this function is not in a useful measurement such a \(m/s^2\) or \(g\)</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td>Pointer to the ADXL34x sensor struct.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structadxl34x__accel__data__t.html">adxl34x_accel_data_t</a> The device ID of the ADXL34x sensor and a status code. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
